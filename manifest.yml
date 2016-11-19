@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: chat lois
+  host: chat-lois
+  disk_quota: 1024M
+  services:
+  - Conversation-bu
+  - Speech to Text-a1
+  - Text to Speech-hg
